@@ -37,7 +37,25 @@ public class MainActivity extends AppCompatActivity {
                 String in1 = input1.getText().toString(), in2 = input2.getText().toString();
                 double w1 = Double.parseDouble(in1), h1 = Double.parseDouble(in2);
                 double bmi = w1 / pow(h1, 2);
-                String ans = "BMI: " + String.format("%.2f",bmi);
+                String temp = ", ";
+                if(bmi < 15){
+                    temp += "too light";
+                }else if(bmi < 16){
+                    temp += "middle light";
+                }else if(bmi < 18.5){
+                    temp += "little light";
+                }else if(bmi < 25){
+                    temp += "normal";
+                }else if(bmi < 30){
+                    temp += "little fat";
+                }else if(bmi < 35){
+                    temp += "fat 1 level";
+                }else if(bmi < 40){
+                    temp += "fat 2 level";
+                }else{
+                    temp += "fat 3 level";
+                }
+                String ans = "BMI: " + String.format("%.2f",bmi) + temp;
                 text2.setText(ans);
             }
         });
