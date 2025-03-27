@@ -1,1 +1,1 @@
-This is a record of Andriod development learning.
+This is a record of Android development learning.
