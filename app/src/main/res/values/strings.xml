@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">app_temp</string>
+    <string name="text_top1">BMI Calculate</string>
+
+    <string name="hint1">please input a string</string>
+    <string name="hint2">please input your weight(kg)</string>
+    <string name="hint3">please input your height(m)</string>
+
+    <string name="button1">verify</string>
+    <string name="result1">result is coming : </string>
+    <string name="calculate">calculate</string>
+    <string name="BMI">BMI index</string>
+</resources>

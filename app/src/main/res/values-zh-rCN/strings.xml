@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">app_temp</string>
+    <string name="text_top1">BMI 计算</string>
+    <string name="hint1">请输入字符</string>
+    <string name="hint3">请输入你的身高（m）</string>
+    <string name="button1">确认</string>
+    <string name="result1">"将要输出的结果 : "</string>
+    <string name="calculate">计算</string>
+    <string name="hint2">请输入你的体重（kg）</string>
+    <string name="BMI">BMI 指数</string>
+</resources>
