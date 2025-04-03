@@ -10,4 +10,12 @@
     <string name="result1">result is coming : </string>
     <string name="calculate">calculate</string>
     <string name="BMI">BMI index</string>
+
+    <string name="score1">Add 1 score</string>
+    <string name="score2">Add 2 score</string>
+    <string name="score3">Add 3 score</string>
+    <string name='reset1'>Reset</string>
+    <string name="team_label">Team A</string>
+    <string name="board">Board</string>
+    <string name='score_result'>Score:0</string>
 </resources>

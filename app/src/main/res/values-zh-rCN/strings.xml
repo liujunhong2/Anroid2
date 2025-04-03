@@ -9,4 +9,11 @@
     <string name="calculate">计算</string>
     <string name="hint2">请输入你的体重（kg）</string>
     <string name="BMI">BMI 指数</string>
+    <string name="score1">加一分</string>
+    <string name="score2">加两分</string>
+    <string name="score3">加三分</string>
+    <string name="reset1">重置</string>
+    <string name="team_label">队伍A</string>
+    <string name="board">比分板</string>
+    <string name="score_result">分数:0</string>
 </resources>

@@ -13,62 +13,76 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#F0F0F0"
-        android:padding="30dp"
-        android:text="@string/text_top1"
         android:gravity="start"
+        android:padding="30dp"
+        android:text="@string/board"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="272dp"
-        android:text="@string/calculate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/text_BMI"
-        android:layout_width="0dp"
+        android:id="@+id/textView"
+        android:layout_width="416dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/team_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/out1"
+        android:layout_width="79dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="172dp"
+        android:gravity="center"
+        android:text="@string/score_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text1" />
+
+    <Button
+        android:id="@+id/add1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:text="@string/BMI"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/score1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
+        app:layout_constraintTop_toTopOf="@+id/text1" />
 
-    <EditText
-        android:id="@+id/input_weight"
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="192dp"
-        android:ems="10"
-        android:hint="@string/hint2"
-        android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+    <Button
+        android:id="@+id/add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="360dp"
+        android:text="@string/score1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/text1" />
 
-    <EditText
-        android:id="@+id/input_height"
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="268dp"
-        android:ems="10"
-        android:hint="@string/hint3"
-        android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+    <Button
+        android:id="@+id/add3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="460dp"
+        android:text="@string/score3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/text1" />
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="568dp"
+        android:text="@string/reset1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
