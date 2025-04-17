@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="1dp"
+    tools:context=".Rate_setting"
+    >
+
+    <EditText
+        android:id="@+id/v_dollar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar_set"
+        android:textSize="38sp"
+        android:padding="18dp"
+        />
+    <EditText
+        android:id="@+id/v_euro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/euro_set"
+        android:textSize="38sp"
+        android:padding="18dp"
+        />
+    <EditText
+        android:id="@+id/v_won"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/won_set"
+        android:textSize="38sp"
+        android:padding="18dp"
+        />
+    <Button
+        android:id="@+id/bu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bu_set"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

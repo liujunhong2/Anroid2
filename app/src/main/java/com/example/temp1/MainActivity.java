@@ -1,91 +1,79 @@
 package com.example.temp1;
-
-import static java.lang.Math.pow;
-
 import android.os.Bundle;
-import android.view.View;
+import android.os.PersistableBundle;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
 public class MainActivity extends AppCompatActivity {
-
-    private Button add1, add2, add3, reset1;
-    private TextView out1;
-    int cnt1 = 0;
+    private Button add1_a, add2_a, add3_a, reset, add1_b, add2_b, add3_b;
+    private TextView out_a, out_b;
+    private int cnt_a = 0, cnt_b = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        init();
+        set();
+//        if(savedInstanceState != null){
+//            cnt_a = savedInstanceState.getInt("score_a", 0);
+//            cnt_b = savedInstanceState.getInt("scour_b", 0);
+//            show();
+//        }
+    }
 
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("score_a", cnt_a);
+        outState.putInt("score_b", cnt_b);
 
-        add1 = findViewById((R.id.add1));
-        add2 = findViewById((R.id.add2));
-        add3 = findViewById((R.id.add3));
-        reset1 = findViewById(R.id.reset1);
-        out1 = findViewById(R.id.out1);
+    }
 
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        cnt_a = savedInstanceState.getInt("score_a", 0);
+        cnt_b = savedInstanceState.getInt("score_b", 0);
+        show();
+    }
 
-        add1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
+    private void init(){
+        add1_a = findViewById((R.id.add1_a));
+        add2_a = findViewById((R.id.add2_a));
+        add3_a = findViewById((R.id.add3_a));
+        add1_b = findViewById((R.id.add1_b));
+        add2_b = findViewById((R.id.add2_b));
+        add3_b = findViewById((R.id.add3_b));
+        reset = findViewById(R.id.reset1);
+        out_a = findViewById(R.id.out_a);
+        out_b = findViewById(R.id.out_b);
+    }
+    private void set(){
+        add1_a.setOnClickListener(v -> update('A', 1));
+        add2_a.setOnClickListener(v -> update('A', 2));
+        add3_a.setOnClickListener(v -> update('A', 3));
+        add1_b.setOnClickListener(v -> update('B', 1));
+        add2_b.setOnClickListener(v -> update('B', 2));
+        add3_b.setOnClickListener(v -> update('B', 3));
+        reset.setOnClickListener(v -> reset1());
+    }
 
-                String now = (String) out1.getText();
-                if(cnt1 == 0){
-                    now = "0";
-                }
-                cnt1 ++;
-                int s_n = Integer.parseInt(now);
-                s_n += 1;
-                String ans = String.format("%d", s_n);
-                out1.setText(ans);
-            }
-        });
-
-        add2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                String now = (String) out1.getText();
-                if(cnt1 == 0){
-                    now = "0";
-                }
-                cnt1 ++;
-                int s_n = Integer.parseInt(now);
-                s_n += 2;
-                String ans = String.format("%d", s_n);
-                out1.setText(ans);
-            }
-        });
-
-        add3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                String now = (String) out1.getText();
-                if(cnt1 == 0){
-                    now = "0";
-                }
-                cnt1 ++;
-                int s_n = Integer.parseInt(now);
-                s_n += 3;
-                String ans = String.format("%d", s_n);
-                out1.setText(ans);
-            }
-        });
-
-        reset1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                out1.setText("0");
-                cnt1 ++;
-            }
-        });
-
+    private void update(char op, int val){
+        if(op == 'A'){
+            cnt_a += val;
+        }else{
+            cnt_b += val;
+        }
+        show();
+    }
+    private void reset1(){
+        cnt_a = cnt_b = 0;
+        show();
+    }
+    private void show(){
+        out_a.setText("Score:" + String.valueOf(cnt_a));
+        out_b.setText("Score:" + String.valueOf(cnt_b));
     }
 }

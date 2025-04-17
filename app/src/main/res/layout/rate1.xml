@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rate1">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/money_title"
+        android:textSize="29sp"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/in1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/money_in1"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/out1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/money_out1"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/in1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bu_dollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/money_dollar"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/out1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bu_euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/money_euro"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/bu_dollar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bu_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/money_won"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/bu_euro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/setting1"
+        android:layout_width="96dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/money_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bu_won" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

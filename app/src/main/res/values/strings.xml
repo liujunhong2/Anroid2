@@ -5,7 +5,6 @@
     <string name="hint1">please input a string</string>
     <string name="hint2">please input your weight(kg)</string>
     <string name="hint3">please input your height(m)</string>
-
     <string name="button1">verify</string>
     <string name="result1">result is coming : </string>
     <string name="calculate">calculate</string>
@@ -14,8 +13,29 @@
     <string name="score1">Add 1 score</string>
     <string name="score2">Add 2 score</string>
     <string name="score3">Add 3 score</string>
+    <string name="score11">Add 1 score</string>
+    <string name="score22">Add 2 score</string>
+    <string name="score33">Add 3 score</string>
     <string name='reset1'>Reset</string>
     <string name="team_label">Team A</string>
-    <string name="board">Board</string>
+    <string name="team_label2">Team B</string>
+    <string name="board">CourtCounter</string>
     <string name='score_result'>Score:0</string>
+    <string name='score_result2'>Score:0</string>
+    <string name="freethrow_a">FREE THROW</string>
+    <string name="freethrow_b">FREE THROW</string>
+
+    <string name="money_in1">Input RMB：</string>
+    <string name="money_out1">After Changed:</string>
+    <string name="money_dollar">Dollar</string>
+    <string name="money_euro">Euro</string>
+    <string name="money_won">Won</string>
+    <string name="money_title">Money Trans</string>
+    <string name="money_setting">Setting</string>
+    <string name="title_activity_rate_edit">RateEditActivity</string>
+
+    <string name="dollar_set"></string>
+    <string name="euro_set"></string>
+    <string name="won_set"></string>
+    <string name="bu_set">Sure</string>
 </resources>
