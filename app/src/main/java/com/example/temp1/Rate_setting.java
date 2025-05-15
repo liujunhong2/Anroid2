@@ -7,7 +7,6 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -61,7 +60,6 @@ public class Rate_setting extends AppCompatActivity {
         Log.i(TAG, "handle dollar " + dollar);
         Log.i(TAG, "handle euro " + euro);
         Log.i(TAG, "handle won " + won);
-
         Intent intent = new Intent();
         Bundle bundle = new Bundle();
         bundle.putFloat("key_dollar", dollar1);
