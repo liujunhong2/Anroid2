@@ -1,1 +1,3 @@
-This is a record of Android development learning.
+项目：安卓开发
+作者：刘俊宏
+学号：42311180
